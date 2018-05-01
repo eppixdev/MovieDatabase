@@ -1,0 +1,28 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  font-family: 'Lato', sans-serif;
+}
+
+.box {
+  display: inline-block;
+}
+
+.b {
+  grid-column: span 3;
+}
+
+.box > h1 {
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.overview {
+  color: lightgrey;
+}

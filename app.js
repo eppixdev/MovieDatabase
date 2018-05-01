@@ -1,6 +1,9 @@
 // Init MovieDB
 const movieDatabase = new MovieDatabase;
 
+// Init UI
+const ui = new UI;
+
 // Search input
 const searchMovie = document.getElementById('searchMovie');
 
@@ -13,11 +16,8 @@ searchMovie.addEventListener('keyup', (e) => {
       const movieID = data.movie.results[0].id
       return movieDatabase.getMovie(movieID)
         .then(data => {
-          console.log(data);
-          const movieProfile = document.getElementById('movieProfile');
-          movieProfile.innerHTML = `<h1>${data.movie.title}</h1>
-          <p>${data.movie.tagline}</p>
-          <p>${data.movie.release_date}`;
+          ui.showProfile(data.movie);
+          console.log(data.movie);
         })
     })
 })

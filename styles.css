@@ -11,18 +11,16 @@
 
 .b {
   grid-column: span 3;
+  color: lightgrey;
 }
 
 .box > h1 {
   text-transform: uppercase;
+  margin: 0;
 }
 
 .tagline {
   font-weight: bold;
   padding: 0;
-  margin: 0;
-}
-
-.overview {
-  color: lightgrey;
+  margin-top: 0;
 }

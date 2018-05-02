@@ -16,10 +16,10 @@ class UI {
         <h1><a href="${movie.homepage}">${movie.title}</a></h1>
         <p class="tagline text-success">${movie.tagline}</p>
         <p class="overview">${movie.overview}</p>
-        <p class="release-date">${movie.release_date}</p>
-        <p>Runtime: ${movie.runtime} minutes</p>
-        <p>Budget: $${budget}</p>
-        <p>Revenue: $${revenue}</p>
+        <p><h5 class="text-success">Release Date:</h5>${movie.release_date}</p>
+        <p><h5 class="text-success">Runtime:</h5> ${movie.runtime} minutes</p>
+        <p><h5 class="text-success">Budget:</h5> $${budget}</p>
+        <p><h5 class="text-success">Revenue:</h5> $${revenue}</p>
       </div>
     `;
   }
